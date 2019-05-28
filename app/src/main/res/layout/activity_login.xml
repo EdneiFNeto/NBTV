@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        tools:context=".LoginActivity">
+
+    <ImageView
+            android:src="@drawable/ic_logo_nb"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.17000002" android:id="@+id/imageView"/>
+
+    <EditText
+            android:hint="Login"
+            android:textColor="@android:color/black"
+            android:background="@drawable/custom_edtext"
+            android:id="@+id/edt_login"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginTop="92dp" android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            android:layout_marginRight="32dp" android:layout_marginEnd="32dp"/>
+
+    <EditText
+            android:hint="Senha"
+            android:textColor="@android:color/black"
+            android:background="@drawable/custom_edtext"
+            android:id="@+id/edt_senha"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/edt_login"
+            app:layout_constraintEnd_toEndOf="@+id/edt_login"
+            app:layout_constraintStart_toStartOf="@+id/edt_login"/>
+
+    <Button
+            android:background="@drawable/custom_button"
+            android:text="Entrar"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_logar"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/edt_senha"
+            app:layout_constraintStart_toStartOf="@+id/edt_senha"
+            app:layout_constraintEnd_toEndOf="@+id/edt_senha"/>
+</android.support.constraint.ConstraintLayout>
