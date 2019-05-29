@@ -13,6 +13,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed(Runnable {
             startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }, 3000)
     }
 }

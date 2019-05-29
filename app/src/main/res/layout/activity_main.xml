@@ -12,7 +12,8 @@
     <include layout="@layout/toolbar_layout"
              app:layout_constraintStart_toStartOf="parent"
              app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintTop_toTopOf="parent" android:id="@+id/include"/>
+             app:layout_constraintTop_toTopOf="parent"
+             android:id="@+id/include"/>
 
     <VideoView
             android:id="@+id/video_view"
@@ -72,6 +73,7 @@
             android:background="@android:color/white"
             android:layout_width="300dp"
             android:layout_height="0dp"
+            android:visibility="gone"
             app:layout_constraintTop_toTopOf="@+id/video_view"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
